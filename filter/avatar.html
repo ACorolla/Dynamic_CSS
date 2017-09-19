@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>avatar</title>
+    <style type="text/css">
+        .container {
+            width: 200px;
+            margin: 20px auto;
+        }
+        .avatar {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: url("./timg.jpg") no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .avatar:after {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            background-size: 100% 100%;
+            border-radius: 50%;
+            transform: scale(.95);
+            filter: blur(10px) brightness(80%) opacity(.8);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="avatar">
+    </div>
+</div>
+</body>
+</html>
